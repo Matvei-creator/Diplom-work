@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Дипломная работа</title>
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/jasny-bootstrap.min.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Тело всего сайта  -->
+        <!-- Боковая панель  -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <!-- Строка с поиском  -->
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="searshsidebar" placeholder="поиск">
+                    </div>
+                </form>
+            </div>
+
+            <ul class="list-unstyled ">
+                <p><a class="fw-bold">Меню</a></p>
+                <li>
+                    <a href="#" class="text-decoration-none text-body">ГЛАВНАЯ</a>
+                    <hr>
+                    <a href="#" class="text-decoration-none text-body">ПРО НАС</a>
+                    <hr>
+                    <a href="#" class="text-decoration-none text-body">КОНТАКТЫ</a>
+                    <hr>
+                </li>
+                <p><a class="fw-bold">Информация про нас</a></p>
+                <li>
+                    <p>
+                        <img src="img/code.jpg" class="card-img-top" alt="...">
+                    <p class="card-text">На днях был придуман новый язык программирования - Kotik</p>
+                    </p>
+                    <p><button type="button" class="btn btn-outline-primary">Далее</button></p>
+                    <hr>
+                    <p>
+                        <img src="img/rabotnik.jpg" class="card-img-top bi bi-alarm-fill" alt="...">
+                    <p class="card-text">Эксперты усомнились в подлинности данных, которые предоставила компания "Apple"
+                    </p>
+                    </p>
+                    <p><button type="button" class="btn btn-outline-primary">Далее</button></p>
+                </li>
+
+                <p><a class="fw-bold">Помощь</a></p>
+                <li>
+                    <a href="#" class="text-decoration-none text-body">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z" />
+                        </svg> test@itprogger.com</a>
+                    <hr>
+                    <a href="#" class="text-decoration-none text-body">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                        </svg> (000) 000-0000</a>
+                    <hr>
+                    <a href="#" class="text-decoration-none text-body">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-house-fill" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z" />
+                            <path fill-rule="evenodd"
+                                d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z" />
+                        </svg> USA Washington Seattle Northway 13002</a>
+                    <hr>
+                </li>
+            </ul>
+        </nav>
+        <!-- Основной контент  -->
+        <div class="content container">
+            <nav>
+                <ul class="list-unstyled ">
+                    <!-- Оглавление-->
+                    <li class="blueheader">
+                        <button type="button" id="sidebarCollapse" class="btn">
+                            <i class="fas fa-align-left"></i>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                                class="bi bi-list" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                            </svg>
+                        </button>
+                        <br>
+                        <a href="#" class="text-decoration-none text-body col-auto me-auto fs-3">СМИ портал</a>
+                    </li>
+                    <!--Первый блок-->
+                    <li>
+                        <div class="mb-3">
+                            <div class="row g-0">
+
+                                <div class="col-md-8 ">
+                                    <div class="card-body">
+                                        <h5 class="card-title fs-2">Работа мечты компания Google</h5>
+                                        <p class="card-text">ЧТО ИЗ СЕБЯ ПРЕДСТАВЛЯЕТ РАБОТА В ГУГЛ?</p>
+                                        <p class="card-text"><small class="text-muted">Lorem ipsum dolor, sit amet
+                                                consectetur adipisicing elit. Veniam sed ad neque et cumque eos
+                                                reiciendis illo aliquam impedit totam voluptate, consequuntur quaerat
+                                                quam accusamus soluta a excepturi mollitia illum.</small></p>
+                                        <p><button type="button" class="btn btn-outline-primary">ЧИТАТЬ ДАЛЕЕ</button>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 ">
+                                    <img src="img/google.jpg" class="img-fluid rounded-start" alt="...">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <hr>
+                    <!--Второй блок-->
+                    <li>
+                        <p class="blueheader-full fs-3">Последние опубликованные</p>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <img src="img/plug.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Lorem ipsum dolor sit amet consectetur adipisicing.</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Voluptatibus distinctio ex doloremque quidem? Consequuntur numquam aliquid
+                                        necessitatibus mollitia temporibus, officiis optio placeat aut ducimus ad omnis
+                                        quos.</p>
+                                    <a href="#" class="btn btn-outline-primary">Далее</a>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <img src="img/plug.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Lorem ipsum dolor sit amet consectetur adipisicing.</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Voluptatibus distinctio ex doloremque quidem? Consequuntur numquam aliquid
+                                        necessitatibus mollitia temporibus, officiis optio placeat aut ducimus ad omnis
+                                        quos.</p>
+                                    <a href="#" class="btn btn-outline-primary">Далее</a>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <img src="img/plug.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Lorem ipsum dolor sit amet consectetur adipisicing.</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Voluptatibus distinctio ex doloremque quidem? Consequuntur numquam aliquid
+                                        necessitatibus mollitia temporibus, officiis optio placeat aut ducimus ad omnis
+                                        quos.</p>
+                                    <a href="#" class="btn btn-outline-primary">Далее</a>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <img src="img/plug.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Lorem ipsum dolor sit amet consectetur adipisicing.</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Voluptatibus distinctio ex doloremque quidem? Consequuntur numquam aliquid
+                                        necessitatibus mollitia temporibus, officiis optio placeat aut ducimus ad omnis
+                                        quos.</p>
+                                    <a href="#" class="btn btn-outline-primary">Далее</a>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <img src="img/plug.png" class="card-img-top scale" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Lorem ipsum dolor sit amet consectetur adipisicing.</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Voluptatibus distinctio ex doloremque quidem? Consequuntur numquam aliquid
+                                        necessitatibus mollitia temporibus, officiis optio placeat aut ducimus ad omnis
+                                        quos.</p>
+                                    <a href="#" class="btn btn-outline-primary">Далее</a>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <img src="img/plug.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Lorem ipsum dolor sit amet consectetur adipisicing.</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Voluptatibus distinctio ex doloremque quidem? Consequuntur numquam aliquid
+                                        necessitatibus mollitia temporibus, officiis optio placeat aut ducimus ad omnis
+                                        quos.</p>
+                                    <a href="#" class="btn btn-outline-primary">Далее</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </li>
+                    <hr>
+                    <!--Третий блок-->
+                    <li>
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <img src="img/plug.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Swift</h5>
+                                    <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                        Accusamus hic quaerat ipsum! Quisquam, suscipit vero!</p>
+                                    <a href="#" class="btn btn-outline-primary">Детали</a>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <img src="img/plug.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Swift</h5>
+                                    <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                        Accusamus hic quaerat ipsum! Quisquam, suscipit vero!</p>
+                                    <a href="#" class="btn btn-outline-primary">Детали</a>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <img src="img/plug.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Swift</h5>
+                                    <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                        Accusamus hic quaerat ipsum! Quisquam, suscipit vero!</p>
+                                    <a href="#" class="btn btn-outline-primary">Детали</a>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <img src="img/plug.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Swift</h5>
+                                    <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                        Accusamus hic quaerat ipsum! Quisquam, suscipit vero!</p>
+                                    <a href="#" class="btn btn-outline-primary">Детали</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <!--Четвёртый блок-->
+                    <li>
+                        <p class="blueheader-full fs-3">Информация</p>
+                        <div class="row">
+                            <div class="col-md-2 ">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                    class="bi bi-people-fill img-fluid rounded-start" viewBox="0 0 16 16">
+                                    <path
+                                        d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                                    <path fill-rule="evenodd"
+                                        d="M5.216 14A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216z" />
+                                    <path d="M4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z" />
+                                </svg>
+                            </div>
+                            <div class="col-md-4 ">
+                                <div class="card-body">
+                                    <h5 class="card-title fs-2">Lorem ipsum dolor sit amet.</h5>
+                                    <p class="card-text"><small class="text-muted">Lorem ipsum dolor sit, amet
+                                            consectetur adipisicing elit. Repellendus quo qui vel accusamus
+                                            quae?</small></p>
+                                </div>
+                            </div>
+                            <div class="col-md-2 ">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+                                    <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"/>
+                                  </svg>
+                            </div>
+                            <div class="col-md-4 ">
+                                <div class="card-body">
+                                    <h5 class="card-title fs-2">Lorem ipsum dolor sit amet.</h5>
+                                    <p class="card-text"><small class="text-muted">Lorem ipsum dolor sit, amet
+                                            consectetur adipisicing elit. Repellendus quo qui vel accusamus
+                                            quae?</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+
+
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jasny-bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
